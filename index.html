@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tenneco Tabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Splide (carousel library for panel content) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="./css/tabs.css" />
+</head>
+<body>
+
+  <!-- Tabs Component -->
+  <!-- <section class="tenneco-tabs" data-theme="${properties.lightMode ? 'light' : 'dark'}"> -->
+  <section class="tenneco-tabs" data-carousel-height="lock" data-default-tab="core-values" data-intro-gif="./assets/intro.gif" data-intro-ms="3000" aria-label="Tenneco Values Section">  
+  <!-- <section class="tenneco-tabs" data-default-tab="core-values" data-intro-gif="./assets/intro.gif" data-intro-ms="3000" aria-label="Tenneco Values Section"> -->
+
+    <!-- Intro GIF shown when this section first enters viewport -->
+    <div class="tenneco-tabs__intro" aria-hidden="true">
+      <img src="./assets/intro.gif" alt="" />
+    </div>
+
+    <!-- Panel re gion (content displays above the tablist) -->
+    <div class="tenneco-tabs__panels" aria-live="polite">
+      <!-- Panel: Core Values -->
+      <section
+        id="panel-core-values"
+        class="tenneco-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab-core-values"
+        hidden
+      >
+        <!-- Panel with Carousel -->
+        <div class="tenneco-tabs__carousel splide" aria-label="Core Values highlights">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <figure class="tenneco-tabs__slide">
+                  <img src="./assets/icon-5.svg" alt="Win icon" />
+                  <figcaption>
+                    <h3 class="tenneco-tabs__slide-title">WIN</h3>
+                    <p>Winners win. We don’t just want to play—we want to dominate.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">  
+                <figure class="tenneco-tabs__slide">
+                  <img src="./assets/icon-1.svg" alt="Brain and heart icon" />
+                  <figcaption>
+                    <h3 class="tenneco-tabs__slide-title">RADICAL CANDOR</h3>
+                    <p>We must engage in productive debate and create constructive tension. Be open and brutally honest, with positive intent. Truth is harmony.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="tenneco-tabs__slide">
+                  <img src="./assets/icon-2.svg" alt="Simplify icon" />
+                  <figcaption>
+                    <h3 class="tenneco-tabs__slide-title">SIMPLIFY</h3>
+                    <p>We must reject bureaucracy, minimize layers, and eliminate silos. Be clear, break down barriers, put together a plan, and focus on execution </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="tenneco-tabs__slide">
+                  <img src="./assets/icon-3.svg" alt="velocity" />
+                  <figcaption>
+                    <h3 class="tenneco-tabs__slide-title">Organizational velocity </h3>
+                    <p>We must build a global team and an organizational structure that facilitates fast decision making, speed of execution matters. </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure class="tenneco-tabs__slide">
+                  <img src="./assets/icon-4.svg" alt="Execution" />
+                  <figcaption>
+                    <h3 class="tenneco-tabs__slide-title">Tenacious execution</h3>
+                    <p>We must drive an accountability and ownership mindset that is the bedrock of our culture, and the foundation for all we do.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="tenneco-tabs__return" type="button" aria-label="Return to first tab">⟵ Return</button>
+      </section>
+
+      <!-- Panel: The Tenneco Standard -->
+      <section
+        id="panel-tenneco-standard"
+        class="tenneco-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab-tenneco-standard"
+        hidden
+      >
+        <header class="tenneco-tabs__panel-head">
+          <h2 class="tenneco-tabs__title">The Tenneco Standard</h2>
+        </header>
+        <div class="tenneco-tabs__content">
+          <p>Always striving to be better than best-in-class—continuously improving, raising the bar, and delivering excellence for our people and customers.</p>
+        </div>
+        <button class="tenneco-tabs__return" type="button" aria-label="Return to first tab">⟵ Return</button>
+      </section>
+
+      <!-- Panel: Emotional Intelligence -->
+      <section
+        id="panel-emotional-intelligence"
+        class="tenneco-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab-emotional-intelligence"
+        hidden  
+      >
+        <header class="tenneco-tabs__panel-head">
+          <h2 class="tenneco-tabs__title">Emotional Intelligence</h2>
+        </header>
+        <div class="tenneco-tabs__content">
+          <p>We lead with empathy and clarity, creating space for honest, productive conversations.</p>
+        </div>
+        <button class="tenneco-tabs__return" type="button" aria-label="Return to first tab">⟵ Return</button>
+      </section>
+
+      <!-- Panel: Development of Self/Others -->
+      <section
+        id="panel-development"
+        class="tenneco-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab-development"
+        hidden
+      >
+        <header class="tenneco-tabs__panel-head">
+          <h2 class="tenneco-tabs__title">Development of Self/Others</h2>
+        </header>
+        <div class="tenneco-tabs__content">
+          <p>We grow people—coaching, mentoring, and celebrating progress.</p>
+        </div>
+        <button class="tenneco-tabs__return" type="button" aria-label="Return to first tab">⟵ Return</button>
+      </section>
+
+      <!-- Panel: Tenneco Mindset -->
+      <section
+        id="panel-tenneco-mindset"
+        class="tenneco-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab-tenneco-mindset"
+        hidden
+      >
+        <header class="tenneco-tabs__panel-head">
+          <h2 class="tenneco-tabs__title">Tenneco Mindset</h2>
+        </header>
+        <div class="tenneco-tabs__content">
+          <p>High standards, bias to action, and radical ownership—together, that’s how we win.</p>
+        </div>
+        <button class="tenneco-tabs__return" type="button" aria-label="Return to first tab">⟵ Return</button>
+      </section>
+    </div>
+
+    <!-- Bottom Tablist with arrowed scroll control -->
+    <div class="tenneco-tabs__bar">
+      <button class="tenneco-tabs__bar-arrow tenneco-tabs__bar-arrow--prev" type="button" aria-label="Scroll tabs left" hidden>‹</button>
+
+      <div class="tenneco-tabs__list-wrap">
+        <div class="tenneco-tabs__list" role="tablist" aria-label="Tabs">
+          <button
+            id="tab-core-values"
+            class="tenneco-tabs__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-core-values"
+            data-slug="core-values"
+            tabindex="-1"
+          >
+            <span class="tenneco-tabs__tab-icon" aria-hidden="true">🧬</span>
+            <span class="tenneco-tabs__tab-label">Core Values</span>
+          </button>
+
+          <button
+            id="tab-tenneco-standard"
+            class="tenneco-tabs__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-tenneco-standard"
+            data-slug="tenneco-standard"
+            tabindex="-1"
+          >
+            <span class="tenneco-tabs__tab-icon" aria-hidden="true">Ⓟ3</span>
+            <span class="tenneco-tabs__tab-label">The Tenneco Standard</span>
+          </button>
+
+          <button
+            id="tab-emotional-intelligence"
+            class="tenneco-tabs__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-emotional-intelligence"
+            data-slug="emotional-intelligence"
+            tabindex="-1"
+          >
+            <span class="tenneco-tabs__tab-icon" aria-hidden="true">🧠</span>
+            <span class="tenneco-tabs__tab-label">Emotional Intelligence</span>
+          </button>
+
+          <button
+            id="tab-development"
+            class="tenneco-tabs__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-development"
+            data-slug="development"
+            tabindex="-1"
+          >
+            <span class="tenneco-tabs__tab-icon" aria-hidden="true">👥</span>
+            <span class="tenneco-tabs__tab-label">Development of Self/Others</span>
+          </button>
+
+          <button
+            id="tab-tenneco-mindset"
+            class="tenneco-tabs__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-tenneco-mindset"
+            data-slug="tenneco-mindset"
+            tabindex="-1"
+          >
+            <span class="tenneco-tabs__tab-icon" aria-hidden="true">🧭</span>
+            <span class="tenneco-tabs__tab-label">Tenneco Mindset</span>
+          </button>
+
+          <!-- Future tabs can be appended here; the bar will scroll and arrows appear automatically -->
+        </div>
+      </div>
+
+      <button class="tenneco-tabs__bar-arrow tenneco-tabs__bar-arrow--next" type="button" aria-label="Scroll tabs right" hidden>›</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="./js/tabs.js" defer></script>
+</body>
+</html>
